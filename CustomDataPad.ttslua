@@ -17045,7 +17045,19 @@ masterPilotDB[3002]={
     actSet = {'F', 'TL', 'Rot', 'BR'},
     keywords = {'Skipray Blastboat'},
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/blastboatbuccaneer.png"
-  }
+}
+
+masterPilotDB[3003]={
+    name = 'Armed Smuggler',
+    Faction = 3,
+    ship_type = 'pb950patrolboat',
+    cost = 7,
+    slot = {21, 14},
+    init = 1,
+    actSet = {'F', 'TL', 'Rot', 'R'},
+    keywords = {'Smuggler'},
+    custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/armedsmuggler.png"
+}
 
 
 return masterPilotDB
@@ -19097,21 +19109,21 @@ masterShipDB['raiderclasscorvette']={
     }
 
   masterShipDB['tyewing']={
-    name = 'TYE-Wing',
-    Hull = 3,
-    Shield = 0,
-    size = 'small',
-    agi = 1,
-    XWS = 'tyewing',
-    newSpawner = true,
-    textures = {
-      hiredgun = 'https://raw.githubusercontent.com/JohnnyCheese/TTS_X-Wing2.0/master/assets/ships-v2/small/btla4ywing/Textures/hiredgun.png',
-    },
-    Fac = {[3]=true},
-    arcs = {fixed = { range=3, type = {'front'}}},
-    mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/small/tyewing/tyewing.obj',
-    moveSet = {'bbl1', 'bs1', 'bbr1','wtl2','wbl2','bs2','wbr2','wtr2','rtl3','wbl3','ws3','wbr3','rtr3','rs4','rk4'},
-    keywords = {'TYE-Wing', 'Ugly'}
+        name = 'TYE-Wing',
+        Hull = 3,
+        Shield = 0,
+        size = 'small',
+        agi = 1,
+        XWS = 'tyewing',
+        newSpawner = true,
+        textures = {
+            hiredgun = 'https://raw.githubusercontent.com/JohnnyCheese/TTS_X-Wing2.0/master/assets/ships-v2/small/btla4ywing/Textures/hiredgun.png',
+        },
+        Fac = {[3]=true},
+        arcs = {fixed = { range=3, type = {'front'}}},
+        mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/small/tyewing/tyewing.obj',
+        moveSet = {'bbl1', 'bs1', 'bbr1','wtl2','wbl2','bs2','wbr2','wtr2','rtl3','wbl3','ws3','wbr3','rtr3','rs4','rk4'},
+        keywords = {'TYE-Wing', 'Ugly'}
     }
 
     masterShipDB['skiprayblastboat']={
@@ -19130,7 +19142,25 @@ masterShipDB['raiderclasscorvette']={
         mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/medium/skiprayblastboat/skiprayblastboat.obj',
         moveSet = {'bbl1','bs1','bbr1','wtl2','wbl2','bs2','wbr2','wtr2','rtl3','rtl3t','wbl3','ws3','wbr3','rtr3', 'rtr3t','rs4','rk4'},
         keywords = {'Skipray Blastboat'}
-        }
+    }
+
+    masterShipDB['pb950patrolboat']={
+        name = 'PB-950 Patrol Boat',
+        Hull = 10,
+        Shield = 4,
+        size = 'large',
+        agi = 0,
+        XWS = 'pb950patrolboat',
+        newSpawner = true,
+        textures = {
+            grey = 'https://raw.githubusercontent.com/JohnnyCheese/TTS_X-Wing2.0/master/assets/ships-v2/large/vt49decimator/textures/grey.jpg',
+        },
+        Fac = {[3]=true},
+        arcs = {fixed = { range=3, type = {'front'}}, turret = {main = {name = 'primary', type={'singleturret'}}}},
+        mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/pb950patrolboat/pb950patrolboat.obj',
+        moveSet = {'rtl1','bbl1','bs1','bbr1','rtr1','wtl2','wbl2','bs2','wbr2','wtr2','wtl3','wbl3','ws3','wbr3','wtr3','ws4'},
+        keywords = {'Skipray Blastboat'}
+    }
 
   return masterShipDB
 
