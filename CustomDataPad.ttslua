@@ -1749,6 +1749,25 @@ function selectModel27()
     selectModelGeneric(27)
 end
 
+function selectModel28()
+    selectModelGeneric(28)
+end
+
+function selectModel29()
+    selectModelGeneric(29)
+end
+
+function selectModel30()
+    selectModelGeneric(30)
+end
+
+function selectModel31()
+    selectModelGeneric(31)
+end
+
+function selectModel32()
+    selectModelGeneric(32)
+end
 -- Selecting a pilot will add ship model and pilot to part list, update max index and go back to main menu. MUST REWRITE! Each pilot option should set variables and call an unified function to set up the part list!
 function setPilotGeneric(arg)
     self.clearButtons()
@@ -19159,7 +19178,7 @@ masterShipDB['raiderclasscorvette']={
         arcs = {fixed = { range=3, type = {'front'}}, turret = {main = {name = 'primary', type={'singleturret'}}}},
         mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/pb950patrolboat/pb950patrolboat.obj',
         moveSet = {'rtl1','bbl1','bs1','bbr1','rtr1','wtl2','wbl2','bs2','wbr2','wtr2','wtl3','wbl3','ws3','wbr3','wtr3','ws4'},
-        keywords = {'Skipray Blastboat'}
+        keywords = {'Patrol Boat'}
     }
 
   return masterShipDB
