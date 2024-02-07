@@ -17055,6 +17055,18 @@ masterPilotDB[3001]={
 }
 
 masterPilotDB[3002]={
+    name = 'Desperate Raider',
+    Faction = 3,
+    ship_type = 'ytie',
+    cost = 2,
+    slot = {21, 14},
+    init = 1,
+    actSet = {'F', 'TL', 'BR'},
+    keywords = {'Ugly'},
+    custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/desperateraider.png"
+  }
+
+masterPilotDB[3003]={
     name = 'Blastboat Buccaneer',
     Faction = 3,
     ship_type = 'skiprayblastboat',
@@ -17066,7 +17078,7 @@ masterPilotDB[3002]={
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/blastboatbuccaneer.png"
 }
 
-masterPilotDB[3003]={
+masterPilotDB[3004]={
     name = 'Armed Smuggler',
     Faction = 3,
     ship_type = 'pb950patrolboat',
@@ -19143,6 +19155,24 @@ masterShipDB['raiderclasscorvette']={
         mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/small/tyewing/tyewing.obj',
         moveSet = {'bbl1', 'bs1', 'bbr1','wtl2','wbl2','bs2','wbr2','wtr2','rtl3','wbl3','ws3','wbr3','rtr3','rs4','rk4'},
         keywords = {'TYE-Wing', 'Ugly'}
+    }
+
+    masterShipDB['ytie']={
+        name = 'Y-TIE',
+        Hull = 4,
+        Shield = 1,
+        size = 'small',
+        agi = 1,
+        XWS = 'ytie',
+        newSpawner = true,
+        textures = {
+            hiredgun = 'https://raw.githubusercontent.com/JohnnyCheese/TTS_X-Wing2.0/master/assets/ships-v2/small/btla4ywing/Textures/hiredgun.png',
+        },
+        Fac = {[3]=true},
+        arcs = {fixed = { range=3, type = {'front'}}},
+        mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/small/ytie/ytie.obj',
+        moveSet = {'bbl1', 'bs1', 'bbr1','wtl2','wbl2','ws2','wbr2','wtr2','rbl3','rs3','rbr3','rk3'},
+        keywords = {'Y-TIE', 'Ugly'}
     }
 
     masterShipDB['skiprayblastboat']={
