@@ -17049,6 +17049,7 @@ masterPilotDB[3001]={
   cost = 1,
   slot = {21, 14},
   init = 1,
+  texture = 'standard',
   actSet = {'F', 'E', 'BR'},
   keywords = {'Ugly'},
   custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/piratetyewingrecruit.png"
@@ -19148,7 +19149,7 @@ masterShipDB['raiderclasscorvette']={
         XWS = 'tyewing',
         newSpawner = true,
         textures = {
-            hiredgun = 'https://raw.githubusercontent.com/JohnnyCheese/TTS_X-Wing2.0/master/assets/ships-v2/small/btla4ywing/Textures/hiredgun.png',
+            standard = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/small/tyewing/Textures/standard.png',
         },
         Fac = {[3]=true},
         arcs = {fixed = { range=3, type = {'front'}}},
