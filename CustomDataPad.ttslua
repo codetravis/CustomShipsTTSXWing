@@ -17046,8 +17046,8 @@ masterPilotDB[3001]={
   name = 'Pirate Recruit',
   Faction = 3,
   ship_type = 'tyewing',
-  cost = 1,
-  slot = {21, 14},
+  cost = 5,
+  slot = {21, 14, 13},
   init = 1,
   texture = 'standard',
   actSet = {'F', 'E', 'BR'},
@@ -17059,8 +17059,8 @@ masterPilotDB[3002]={
     name = 'Desperate Raider',
     Faction = 3,
     ship_type = 'ytie',
-    cost = 2,
-    slot = {21, 14},
+    cost = 11,
+    slot = {21, 14, 4, 13},
     init = 1,
     actSet = {'F', 'TL', 'BR'},
     keywords = {'Ugly'},
@@ -17071,8 +17071,8 @@ masterPilotDB[3003]={
     name = 'Blastboat Buccaneer',
     Faction = 3,
     ship_type = 'skiprayblastboat',
-    cost = 7,
-    slot = {21, 14},
+    cost = 55,
+    slot = {21, 14, 8, 6, 5, 16},
     init = 2,
     actSet = {'F', 'TL', 'Rot', 'BR'},
     keywords = {'Skipray Blastboat'},
@@ -17083,7 +17083,7 @@ masterPilotDB[3004]={
     name = 'Armed Smuggler',
     Faction = 3,
     ship_type = 'pb950patrolboat',
-    cost = 7,
+    cost = 65,
     slot = {21, 14},
     init = 1,
     actSet = {'F', 'TL', 'Rot', 'R'},
@@ -19172,7 +19172,7 @@ masterShipDB['raiderclasscorvette']={
         Fac = {[3]=true},
         arcs = {fixed = { range=3, type = {'front'}}},
         mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/small/ytie/ytie.obj',
-        moveSet = {'bbl1', 'bs1', 'bbr1','wtl2','wbl2','ws2','wbr2','wtr2','rbl3','rs3','rbr3','rk3'},
+        moveSet = {'bbl1','bs1','bbr1','rtl2','wbl2','bs2','wbr2','rtr2','rbl3','ws3','rbr3','rs0'},
         keywords = {'Y-TIE', 'Ugly'}
     }
 
@@ -19190,7 +19190,7 @@ masterShipDB['raiderclasscorvette']={
         Fac = {[3]=true},
         arcs = {fixed = { range=3, type = {'front'}}, turret = {main = {name = 'primary', type={'singleturret'}}}},
         mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/medium/skiprayblastboat/skiprayblastboat.obj',
-        moveSet = {'bbl1','bs1','bbr1','wtl2','wbl2','bs2','wbr2','wtr2','rtl3','rtl3t','wbl3','ws3','wbr3','rtr3', 'rtr3t','rs4','rk4'},
+        moveSet = {'bbl1','bs1','bbr1','wtl2','wbl2','bs2','wbr2','wtr2','rtl3t','rtl3','wbl3','ws3','wbr3','rtr3','rtr3t','rs4'},
         keywords = {'Skipray Blastboat'}
     }
 
