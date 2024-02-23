@@ -17124,10 +17124,10 @@ masterPilotDB[3005]={
 
 masterPilotDB[3006]={
     name = 'Luxury Shuttle',
-    Faction = 3,
+    Faction = 2,
     ship_type = 'civilianshuttle',
     loadout = 100,
-    cost = 65,
+    cost = 20,
     slot = {},
     slots = {},
     init = 0,
