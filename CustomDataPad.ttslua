@@ -17132,6 +17132,7 @@ masterPilotDB[3006]={
     slots = {},
     init = 0,
     actSet = {},
+    texture = 'senator',
     keywords = {'Civilian'},
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/luxuryshuttle.jpg"
 }
