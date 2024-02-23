@@ -1613,6 +1613,8 @@ function selectModelGeneric(arg)
                 if XWS_DATA.pilots[v.XWS] then
                   cost = XWS_DATA.pilots[v.XWS].cost
                   loadout =  XWS_DATA.pilots[v.XWS].loadout
+                elseif v.loadout > 0 then
+                    loadout = v.loadout
                 end
                 availablePilots[index] = {id = k, name = v.name, cost = cost, loadout = loadout, keywords={}, upgrades={}}
                 for _,keyword in pairs(masterShipDB[chosenModel].keywords or {} ) do
@@ -1915,7 +1917,14 @@ function selectShipGeneric(arg)
         free_slots[slot] = (free_slots[slot] or 0) + 1
       --   print(i .. ":" .. slot  )
       end
+    elseif pilot.loadout > 0 then
+        loadout_value = pilot.loadout
+        cost = pilot.cost
+        for _, slot in pairs(pilot.slots) do
+            free_slots[slot] = (free_slots[slot] or 0) + 1
+        end
     end
+    
 
     local loadout_cost = 0
 
@@ -17046,8 +17055,10 @@ masterPilotDB[3001]={
   name = 'Pirate Recruit',
   Faction = 3,
   ship_type = 'tyewing',
+  loadout = 100,
   cost = 5,
-  slot = {21, 14, 13},
+  slot = {14, 13},
+  slots = {"Modification", "Illicit"},
   init = 1,
   texture = 'standard',
   actSet = {'F', 'E', 'BR'},
@@ -17059,8 +17070,10 @@ masterPilotDB[3002]={
     name = 'Desperate Raider',
     Faction = 3,
     ship_type = 'ytie',
+    loadout = 100,
     cost = 11,
-    slot = {21, 14, 4, 13},
+    slot = {14, 4, 13},
+    slots = {"Modification", "Turret", "Illicit"},
     init = 1,
     actSet = {'F', 'TL', 'BR'},
     keywords = {'Ugly'},
@@ -17071,8 +17084,10 @@ masterPilotDB[3003]={
     name = 'Blastboat Buccaneer',
     Faction = 3,
     ship_type = 'skiprayblastboat',
+    loadout = 100,
     cost = 55,
-    slot = {21, 14, 8, 6, 5, 16},
+    slot = {14, 8, 6, 5, 16},
+    slots = {"Modification", "Crew", "Missile", "Torpedo", "Gunner"},
     init = 2,
     actSet = {'F', 'TL', 'Rot', 'BR'},
     keywords = {'Skipray Blastboat'},
@@ -17083,12 +17098,42 @@ masterPilotDB[3004]={
     name = 'Armed Smuggler',
     Faction = 3,
     ship_type = 'pb950patrolboat',
+    loadout = 100,
     cost = 65,
-    slot = {21, 14},
+    slot = {14, 16, 8, 8, 13, 6},
+    slots = {"Missile", "Gunner", "Crew", "Crew", "Illicit", "Modification"},
     init = 1,
     actSet = {'F', 'TL', 'Rot', 'R'},
-    keywords = {'Smuggler'},
+    keywords = {'Patrol Boat'},
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/armedsmuggler.png"
+}
+
+masterPilotDB[3005]={
+    name = 'Golden Opportunity',
+    Faction = 3,
+    ship_type = 'pb950patrolboat',
+    loadout = 100,
+    cost = 65,
+    slot = {14, 16, 8, 8, 13, 6},
+    slots = {"Missile", "Gunner", "Crew", "Crew", "Illicit", "Modification"},
+    init = 1,
+    actSet = {'F', 'TL', 'Rot', 'R'},
+    keywords = {'Patrol Boat'},
+    custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/goldenopportunity.png"
+}
+
+masterPilotDB[3006]={
+    name = 'Luxury Shuttle',
+    Faction = 3,
+    ship_type = 'civilianshuttle',
+    loadout = 100,
+    cost = 65,
+    slot = {},
+    slots = {},
+    init = 0,
+    actSet = {},
+    keywords = {'Civilian'},
+    custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/civilianshuttle.png"
 }
 
 
@@ -19210,6 +19255,25 @@ masterShipDB['raiderclasscorvette']={
         mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/pb950patrolboat/pb950patrolboat.obj',
         moveSet = {'rtl1','bbl1','bs1','bbr1','rtr1','wtl2','wbl2','bs2','wbr2','wtr2','wtl3','wbl3','ws3','wbr3','wtr3','ws4'},
         keywords = {'Patrol Boat'}
+    }
+
+    masterShipDB['civilianshuttle']={
+        name = 'Civilian Shuttle',
+        Hull = 8,
+        Shield = 0,
+        size = 'large',
+        agi = 1,
+        XWS = 'civilianshuttle',
+        newSpawner = true,
+        textures = {
+            senator = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/civilianshuttle/textures/senatorshuttle.jpg',
+            senatortwo = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/civilianshuttle/textures/senatorshuttle_2.jpg',
+        },
+        Fac = {[2]=true},
+        arcs = {},
+        mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/civilianshuttle/civilianshuttle.obj',
+        moveSet = {'wbl1','ws1','wbr1','ws2'},
+        keywords = {'Civilian'}
     }
 
   return masterShipDB
