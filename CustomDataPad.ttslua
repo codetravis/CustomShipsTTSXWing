@@ -17133,7 +17133,7 @@ masterPilotDB[3006]={
     init = 0,
     actSet = {},
     keywords = {'Civilian'},
-    custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/civilianshuttle.png"
+    custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/luxuryshuttle.jpg"
 }
 
 
