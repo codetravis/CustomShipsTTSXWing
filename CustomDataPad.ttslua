@@ -1199,7 +1199,12 @@ function idSpawner(idTable)
             loadout = loadout + cost
 
             --fList.Upgrades[k][key].card = masterUpgradesDB[value].card
-            fList.Upgrades[k][key].card = "https://raw.githubusercontent.com/eirikmun/x-wing2.0-project-goldenrod/" .. Format .. "/src/images/En/upgrades/" ..masterUpgradesDB[value].XWS..".png"
+            if masterUpgradesDB[value].custom_img ~= nil then
+                fList.Upgrades[k][key].card = masterUpgradesDB[value].custom_img
+            else
+                fList.Upgrades[k][key].card = "https://raw.githubusercontent.com/eirikmun/x-wing2.0-project-goldenrod/" .. Format .. "/src/images/En/upgrades/" ..masterUpgradesDB[value].XWS..".png"
+            end
+            
             if masterUpgradesDB[value].dual == true then
               fList.Upgrades[k][key].cardB = "https://raw.githubusercontent.com/eirikmun/x-wing2.0-project-goldenrod/" .. Format .. "/src/images/En/upgrades/"..masterUpgradesDB[value].XWS.."-sideb.png"
             elseif masterUpgradesDB[value].cardB ==  nil then
@@ -2945,7 +2950,7 @@ end
 -- Calls the newSpawner, wich will set up a propper postition for the spawning ships (POSITION NEEDS TO BE REFERCENCED TO SELF, NOT GLOBAL)
 function spawnNow(arg)
     storePos = self.getPosition()
-    pos = LocalPos(self, {3.5, 1, 4})
+    pos = LocalPos(self, {3.5, 2, 4})
     rot = self.getRotation()
     self.setPosition(pos)
     self.setRotation({0,rot.y,rot.z})
@@ -7852,6 +7857,37 @@ masterUpgradesDB['combatboardingtube']={
       ship = {['gauntletfighter']=true}
     },
     cost = 0,
+}
+
+masterUpgradesDB['boltonioncannon']={
+    name = "Bolt On Ion Cannon",
+    slot = 13,
+    cost = 1,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/boltonioncannon.png'
+}
+
+masterUpgradesDB['makeshifthullplates']={
+    name = "Makeshift Hull Plates",
+    slot = 13,
+    cost = 1,
+    Hull = 1,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/makeshifthullplates.png'
+}
+
+masterUpgradesDB['scavengedshieldgenerator']={
+    name = "Scavenged Shield Generator",
+    slot = 13,
+    cost = 0,
+    shd = 1,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/scavengedshieldgenerator.png'
+}
+
+masterUpgradesDB['rocketassistedgetaway']={
+    name = "Rocket Assisted Getaway",
+    slot = 13,
+    cost = 2,
+    Charge = 1,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/rocketassistedgetaway.png'
 }
 
 return masterUpgradesDB
