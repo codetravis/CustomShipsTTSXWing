@@ -1613,7 +1613,7 @@ function selectModelGeneric(arg)
                 if XWS_DATA.pilots[v.XWS] then
                   cost = XWS_DATA.pilots[v.XWS].cost
                   loadout =  XWS_DATA.pilots[v.XWS].loadout
-                elseif v.loadout > 0 then
+                elseif v.loadout ~= nil and v.loadout > 0 then
                     loadout = v.loadout
                 end
                 availablePilots[index] = {id = k, name = v.name, cost = cost, loadout = loadout, keywords={}, upgrades={}}
@@ -19267,8 +19267,8 @@ masterShipDB['raiderclasscorvette']={
         XWS = 'civilianshuttle',
         newSpawner = true,
         textures = {
-            senator = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/civilianshuttle/textures/senatorshuttle.jpg',
-            senatortwo = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/civilianshuttle/textures/senatorshuttle_2.jpg',
+            senator = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/civilianshuttle/Textures/senatorshuttle.jpg',
+            senatortwo = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/civilianshuttle/Textures/senatorshuttle_2.jpg',
         },
         Fac = {[2]=true},
         arcs = {},
