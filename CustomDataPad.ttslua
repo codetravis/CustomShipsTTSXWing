@@ -7882,13 +7882,6 @@ masterUpgradesDB['scavengedshieldgenerator']={
     custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/scavengedshieldgenerator.png'
 }
 
-masterUpgradesDB['rocketassistedgetaway']={
-    name = "Rocket Assisted Getaway",
-    slot = 13,
-    cost = 2,
-    Charge = 1,
-    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/rocketassistedgetaway.png'
-}
 
 return masterUpgradesDB
 
@@ -17173,6 +17166,19 @@ masterPilotDB[3006]={
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/luxuryshuttle.jpg"
 }
 
+masterPilotDB[3007]={
+	name = 'Gearhead Special',
+	Faction = 3,
+	ship_type = 'patchworkywing',
+	loadout = 100,
+	cost = 17,
+	slot = {14, 4, 13},
+    slots = {"Modification", "Turret", "Illicit"},
+    init = 1,
+    actSet = {'F', 'TL', 'BR'},
+	texture = 'hiredgun',
+	custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/gearheadywing.png"
+}
 
 return masterPilotDB
 
@@ -19227,7 +19233,7 @@ masterShipDB['raiderclasscorvette']={
         Hull = 3,
         Shield = 0,
         size = 'small',
-        agi = 1,
+        agi = 2,
         XWS = 'tyewing',
         newSpawner = true,
         textures = {
@@ -19257,6 +19263,24 @@ masterShipDB['raiderclasscorvette']={
         moveSet = {'bbl1','bs1','bbr1','rtl2','wbl2','bs2','wbr2','rtr2','rbl3','ws3','rbr3','rs0'},
         keywords = {'Y-TIE', 'Ugly'}
     }
+	
+	masterShipDB['patchworkywing']={
+		name = 'Patchwork Y-Wing',
+		Hull = 5,
+		Shield = 1,
+		size = 'small',
+		agi = 1,
+		XWS = 'patchworkywing',
+		newSpawner = true,
+		textures = {
+            hiredgun = 'https://raw.githubusercontent.com/JohnnyCheese/TTS_X-Wing2.0/master/assets/ships-v2/small/btla4ywing/Textures/hiredgun.png',
+        },
+		Fac = {[3]=true},
+		arcs = {fixed = { range=3, type = {'front'}}},
+		mesh = 'https://raw.githubusercontent.com/JohnnyCheese/TTS_X-Wing2.0/master/assets/ships-v2/small/btla4ywing/btla4_ywing.obj',
+		moveSet = {'bbl1', 'bs1', 'bbr1','wtl2','wbl2','bs2','wbr2','wtr2','rtl3','wbl3','ws3','wbr3','rtr3','rs4','rk4'},
+		keywords = {'Y-Wing'}
+	}
 
     masterShipDB['skiprayblastboat']={
         name = 'Skipray Blastboat',
