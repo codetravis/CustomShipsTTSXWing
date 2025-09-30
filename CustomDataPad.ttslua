@@ -7882,6 +7882,31 @@ masterUpgradesDB['scavengedshieldgenerator']={
     custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/scavengedshieldgenerator.png'
 }
 
+masterUpgradesDB['improvisedbombrack']={
+	name = "Improvised Bomb Rack",
+	slot = 13,
+	cost = 0,
+	Bomb = true,
+	Charge = 1,
+	custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/improvisedbombrack.png'
+}
+
+masterUpgradesDB['podracershandicap']={
+	name = "Podracer Handicap",
+	slot = 13,
+	cost = 0,
+	Charge = 1,
+	custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/podracershandicap.png'
+}
+
+masterUpgradesDB['homemadesignaljammer']={
+	name = "Homemade Signal Jammer",
+	slot = 13,
+	cost = 0,
+	Charge = 1,
+	custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/homemadesignaljammer.png'
+}
+
 
 return masterUpgradesDB
 
