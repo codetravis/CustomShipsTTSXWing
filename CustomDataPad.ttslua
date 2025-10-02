@@ -17205,6 +17205,62 @@ masterPilotDB[3007]={
 	custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/gearheadywing.png"
 }
 
+masterPilotDB[3008]={
+  name = 'Local Patrol Cadet',
+  Faction = 6,
+  ship_type = 'clonez95headhunter',
+  loadout = 30,
+  cost = 3,
+  slot = {21,2,14, 5},
+  init = 1,
+  texture = 'standard',
+  actSet = {'F','BR','TL','B'},
+  custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/localpatrolcadet.png"
+}
+
+masterPilotDB[3009]={
+  name = 'Local Patrol Sergeant',
+  Faction = 6,
+  ship_type = 'btlbywing',
+  loadout = 30,
+  cost = 3,
+  slot = {21, 1, 4, 5, 16, 10, 12, 14},
+  init = 2,
+  texture = 'standard',
+  actSet = {'F','TL','BR'},
+  custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/localpatrolsergeant.png"
+}
+
+masterPilotDB[3010]={
+    name = 'Local Patrol Lieutenant',
+    Faction = 6,
+    ship_type = 'skiprayblastboat',
+    loadout = 100,
+    cost = 55,
+    slot = {14, 8, 6, 5, 16},
+    slots = {"Modification", "Crew", "Missile", "Torpedo", "Gunner"},
+    init = 2,
+    actSet = {'F', 'TL', 'Rot', 'BR'},
+    keywords = {'Skipray Blastboat'},
+    custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/localpatrollieutenant.png"
+}
+
+masterPilotDB[3011]={
+    name = 'Local Patrol Captain',
+    Faction = 6,
+    ship_type = 'pb950patrolboat',
+    loadout = 100,
+    cost = 65,
+    slot = {14, 16, 8, 8, 13, 6},
+    slots = {"Missile", "Gunner", "Crew", "Crew", "Illicit", "Modification"},
+    init = 1,
+    actSet = {'F', 'TL', 'Rot', 'R'},
+    keywords = {'Patrol Boat'},
+    custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/localpatrolcaptain.png"
+}
+
+
+
 return masterPilotDB
 
 end)
