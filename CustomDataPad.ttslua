@@ -19374,7 +19374,7 @@ masterShipDB['raiderclasscorvette']={
         textures = {
           hiredgun = 'https://raw.githubusercontent.com/JohnnyCheese/TTS_X-Wing2.0/master/assets/ships-v2/small/btla4ywing/Textures/hiredgun.png',
         },
-        Fac = {[3]=true},
+        Fac = {[3]=true, [6]=true},
         arcs = {fixed = { range=3, type = {'front'}}, turret = {main = {name = 'primary', type={'singleturret'}}}},
         mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/medium/skiprayblastboat/skiprayblastboat.obj',
         moveSet = {'bbl1','bs1','bbr1','wtl2','wbl2','bs2','wbr2','wtr2','rtl3t','rtl3','wbl3','ws3','wbr3','rtr3','rtr3t','rs4'},
