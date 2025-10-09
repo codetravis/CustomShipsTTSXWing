@@ -7907,6 +7907,114 @@ masterUpgradesDB['homemadesignaljammer']={
 	custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/homemadesignaljammer.png'
 }
 
+masterUpgradesDB['boardingcrewbattledroid']={
+    name = "Boarding Crew Battle Droid",
+    slot = 18,
+    cost = 0,
+    Charge = 2,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/boardingcrewbattledroid.png'
+}
+
+masterUpgradesDB['boardingcrewelitetraining']={
+    name = "Boarding Crew Elite Training",
+    slot = 18,
+    cost = 0,
+    Charge = 2,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/boardingcrewelitetraining.png'
+}
+
+masterUpgradesDB['doubleplatedhull']={
+    name = "Double Plated Hull",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/doubleplatedhull.png'
+}
+
+masterUpgradesDB['improvedshieldpowerrelays']={
+    name = "Improved Shield Power Relays",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/improvedshieldpowerrelays.png'
+}
+
+masterUpgradesDB['installheavyioncannons']={
+    name = "Install Heavy Ion Cannons",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/installheavyioncannons.png'
+}
+
+masterUpgradesDB['installmissingsensormodules']={
+    name = "Install Missing Sensor Modules",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/installmissingsensormodules.png'
+}
+
+masterUpgradesDB['installnewhyperdrive']={
+    name = "Install New Hyperdrive",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/installnewhyperdrive.png'
+}
+
+masterUpgradesDB['newcrewcompartmentlifesupportsystem']={
+    name = "New Crew Compartment Life Support System",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/newcrewcompartmentlifesupportsystem.png'
+}
+
+masterUpgradesDB['optimizenavcomputer']={
+    name = "Optimize Nav Computer",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/optimizenavcomputer.png'
+}
+
+masterUpgradesDB['recalibrateaccelerationcompensator']={
+    name = "Recalibrate Acceleration Compensator",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/recalibrateaccelerationcompensator.png'
+}
+
+masterUpgradesDB['repaircomboard']={
+    name = "Repair Com Board",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/repaircomboard.png'
+}
+
+masterUpgradesDB['replaceionenginecore']={
+    name = "Replace Ion Engine Core",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/replaceionenginecore.png'
+}
+
+masterUpgradesDB['replaceshieldprojectors']={
+    name = "Replace Shield Projectors",
+    slot = 18,
+    cost = 0,
+	shd = 4,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/replaceshieldprojectors.png'
+}
+
+masterUpgradesDB['replaceturretcapacitors']={
+    name = "Replace Turret Capacitors",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/replaceturretcapacitors.png'
+}
+
+masterUpgradesDB['upgradedshieldgenerator']={
+    name = "Upgraded Shield Generator",
+    slot = 18,
+    cost = 0,
+    custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/upgradedshieldgenerator.png'
+}
+
 
 return masterUpgradesDB
 
