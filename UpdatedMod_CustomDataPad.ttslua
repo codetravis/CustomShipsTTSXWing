@@ -17880,7 +17880,7 @@ masterPilotDB[1082] = {
     }
 }
 
-masterPilotDB[3001]={
+masterPilotDB[4001]={
   name = 'Pirate Recruit',
   Faction = 3,
   ship_type = 'tyewing',
@@ -17895,7 +17895,7 @@ masterPilotDB[3001]={
   custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/piratetyewingrecruit.png"
 }
 
-masterPilotDB[3002]={
+masterPilotDB[4002]={
     name = 'Desperate Raider',
     Faction = 3,
     ship_type = 'ytie',
@@ -17909,7 +17909,7 @@ masterPilotDB[3002]={
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/desperateraider.png"
   }
 
-masterPilotDB[3003]={
+masterPilotDB[4003]={
     name = 'Blastboat Buccaneer',
     Faction = 3,
     ship_type = 'skiprayblastboat',
@@ -17923,7 +17923,7 @@ masterPilotDB[3003]={
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/blastboatbuccaneer.png"
 }
 
-masterPilotDB[3004]={
+masterPilotDB[4004]={
     name = 'Armed Smuggler',
     Faction = 3,
     ship_type = 'pb950patrolboat',
@@ -17937,7 +17937,7 @@ masterPilotDB[3004]={
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/armedsmuggler.png"
 }
 
-masterPilotDB[3005]={
+masterPilotDB[4005]={
     name = 'Golden Opportunity',
     Faction = 3,
     ship_type = 'pb950patrolboat',
@@ -17951,7 +17951,7 @@ masterPilotDB[3005]={
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/goldenopportunity.png"
 }
 
-masterPilotDB[3006]={
+masterPilotDB[4006]={
     name = 'Luxury Shuttle',
     Faction = 2,
     ship_type = 'civilianshuttle',
@@ -17966,7 +17966,7 @@ masterPilotDB[3006]={
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/luxuryshuttle.jpg"
 }
 
-masterPilotDB[3007]={
+masterPilotDB[4007]={
 	name = 'Gearhead Special',
 	Faction = 3,
 	ship_type = 'patchworkywing',
@@ -17980,7 +17980,7 @@ masterPilotDB[3007]={
 	custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/gearheadywing.png"
 }
 
-masterPilotDB[3008]={
+masterPilotDB[4008]={
   name = 'Local Patrol Cadet',
   Faction = 6,
   ship_type = 'clonez95headhunter',
@@ -17993,7 +17993,7 @@ masterPilotDB[3008]={
   custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/localpatrolcadet.png"
 }
 
-masterPilotDB[3009]={
+masterPilotDB[4009]={
   name = 'Local Patrol Sergeant',
   Faction = 6,
   ship_type = 'btlbywing',
@@ -18006,7 +18006,7 @@ masterPilotDB[3009]={
   custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/localpatrolsergeant.png"
 }
 
-masterPilotDB[3010]={
+masterPilotDB[4010]={
     name = 'Local Patrol Lieutenant',
     Faction = 6,
     ship_type = 'skiprayblastboat',
@@ -18020,7 +18020,7 @@ masterPilotDB[3010]={
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/localpatrollieutenant.png"
 }
 
-masterPilotDB[3011]={
+masterPilotDB[4011]={
     name = 'Local Patrol Captain',
     Faction = 6,
     ship_type = 'pb950patrolboat',
