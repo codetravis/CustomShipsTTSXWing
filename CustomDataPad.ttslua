@@ -7895,6 +7895,7 @@ masterUpgradesDB['podracershandicap']={
 	name = "Podracer Handicap",
 	slot = 13,
 	cost = 0,
+	addAction = {'B'},
 	Charge = 1,
 	custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/podracershandicap.png'
 }
@@ -7905,6 +7906,14 @@ masterUpgradesDB['homemadesignaljammer']={
 	cost = 0,
 	Charge = 1,
 	custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/homemadesignaljammer.png'
+}
+
+masterUpgradeDB['aftermarketengineupgrade']={
+	name = "After Market Engine Upgrade",
+	slot = 13,
+	remSlog = {14},
+	addAction = {'B'},
+	custom_img = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/upgrades/aftermarketengineupgrade.png'
 }
 
 masterUpgradesDB['boardingcrewbattledroid']={
