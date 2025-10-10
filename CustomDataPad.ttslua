@@ -17376,6 +17376,19 @@ masterPilotDB[3011]={
     custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/localpatrolcaptain.png"
 }
 
+masterPilotDB[3012]={
+	name = "BFF-1 Bulk Freighter",
+	Faction = 6,
+	ship_type = 'bulkfreighter',
+	loadout = 0,
+	cost = 0,
+	slot = {},
+	init = 0,
+	actSet = {},
+	keywords = { 'Freighter' },
+	custom_img = "https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/cards/pilots/BulkFreigherEmpire.png"
+}
+
 
 
 return masterPilotDB
@@ -19518,10 +19531,10 @@ masterShipDB['raiderclasscorvette']={
 
     masterShipDB['civilianshuttle']={
         name = 'Civilian Shuttle',
-        Hull = 8,
+        Hull = 6,
         Shield = 0,
         size = 'large',
-        agi = 1,
+        agi = 2,
         XWS = 'civilianshuttle',
         newSpawner = true,
         textures = {
@@ -19534,6 +19547,24 @@ masterShipDB['raiderclasscorvette']={
         moveSet = {'wbl1','ws1','wbr1','ws2'},
         keywords = {'Civilian'}
     }
+	
+	masterShipDB['bulkfreighter']={
+		name = 'BFF-1 Bulk Freighter',
+        Hull = 8,
+        Shield = 4,
+        size = 'large',
+        agi = 0,
+        XWS = 'bulkfreighter',
+        newSpawner = true,
+        textures = {
+            civilian = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/bff1/Textures/bff1.jpg'
+        },
+        Fac = {[2]=true},
+        arcs = {},
+        mesh = 'https://raw.githubusercontent.com/codetravis/CustomShipsTTSXWing/master/assets/ships/large/bff1/bff1.obj',
+        moveSet = {'ws1'},
+        keywords = {'Civilian'}
+	}
 
   return masterShipDB
 
